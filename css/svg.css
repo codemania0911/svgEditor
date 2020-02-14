@@ -1,0 +1,15 @@
+/*******************  svg ********************************/
+
+svg {
+    border: 1px solid #333;
+    display: block;
+    margin: 0 auto;
+    cursor:auto;
+    position: absolute;
+}
+
+path{cursor:move;}
+  
+circle{
+    cursor: alias;
+}

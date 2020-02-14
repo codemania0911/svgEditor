@@ -1,0 +1,31 @@
+body{
+    background: black;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  
+  p {
+    text-align: center;
+    color: #777
+  }
+  
+  svg {
+    border: 1px solid #333;
+    display: block;
+    margin: 0 auto;
+    cursor:auto;
+  }
+  
+  path,
+  line,
+  polygon{
+    stroke: dodgerblue;
+  }
+  
+  path{cursor:move;}
+  
+  circle{
+    fill: dodgerblue;
+    cursor: alias;
+  }
+  
+  

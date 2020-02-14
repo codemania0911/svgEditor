@@ -1,0 +1,143 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Managersal</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://www.managersal.net/common/styles/fa.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="https://www.managersal.net/common/mdb/css/mdb.min.css">    
+    
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/svg.css">
+  </head>
+  <body>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <!-- widget area -->
+          <div class="sal-preview col-md-12 col-lg-9">
+            <!-- edit pannel -->
+            <div id="widget" class="widget">              
+            </div>
+            <!-- end edit pannel -->
+            <!-- description -->
+            <div class="description">
+              <div class="row">
+
+                <div class="col-sm-12 col-md-8 mt-3">
+                  <div class="row">
+                    <div class="col">                      
+                      <p class="text-normal">Currently editing</p>
+                      <p class="text-normal sal-font-18 text-dark">Layer: 1</p>
+                      <p class="text-normal sal-font-18 text-dark">Item: &nbsp;&nbsp;All</p>
+                    </div>
+                    <!-- active color -->
+                    <div class="col">
+                      <p class="text-normal">Active colors</p>
+                      <div id="selected-color-list">
+                        <p>Please add colors</p>
+                      </div>
+                    </div>
+                    <!-- end Active color -->
+                    <div class="col">
+                      <p class="text-normal">Available options</p>
+                      <div class="">
+                        <a class="btn-floating btn-color-sm color-bg-0 color-bo-0 waves-effect waves-light"></a>
+                        <a class="btn-floating btn-color-sm color-bg-0 color-bo-0"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 mt-3">
+                  <p class="text-normal">Scale:</p>
+                  <p class="text-normal d-inline">Physical size:</p>
+                  <p class="text-normal d-inline float-right">small</p>
+                  <div class="clear"></div>
+                  <p class="text-normal float-right">L&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;W&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;H <span class="sal-font-12">&nbsp;&nbsp;&nbsp;meters</span></p>
+                </div>
+              </div>
+
+            </div>
+            <!-- end description -->
+          </div>
+          <!-- end widget area -->
+          <!-- add item -->
+          <div class="col-md-12 col-lg-3">
+            <div class="sal-add-item">                
+              <div class="row">
+                <div class="col-md-6 col-lg-12">
+                  <p class="text-normal">Add Item</p>
+                  <ul class="category-list m-0">
+                  </ul>
+                  <button type="button" class="btn sal-btn btn-category">Select Category</button>                
+                </div>
+                <div class="col-md-6 col-lg-12 mt-3">
+                  <p class="text-normal">Add to: <span class="sal-font-18">Layer 1</span></p>
+                  <p class="text-normal">Colors (initial schema):</p>
+                  <!-- color-bg-value and color-br-value are test value. It must be changed real color like "rgb(xx,xx,xx)" or "rgba(xx,xx,xx,xx)" -->
+                  <div id="color-list">
+                    <a class="btn-floating btn-color-md color-bo-1 color-bg-1 waves-effect waves-light" color-bg-value="color-bg-1" color-bo-value="color-bo-1"></a>
+                    <a class="btn-floating btn-color-md color-bo-2 color-bg-2" color-bg-value="color-bg-2" color-bo-value="color-bo-2"></a>
+                    <a class="btn-floating btn-color-md color-bo-3 color-bg-3" color-bg-value="color-bg-3" color-bo-value="color-bo-3"></a>
+                    <a class="btn-floating btn-color-md color-bo-4 color-bg-4" color-bg-value="color-bg-4" color-bo-value="color-bo-4"></a>
+                  </div>
+                  <p class="text-normal mt-3">Save design</p>
+                  <p class="text-normal text-center text-uppercase">My name is 45</p>
+                  <p class="text-normal font-italic sal-font-12">Last auto-save Feb 3 2020, 14:34</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end add item -->
+        </div>
+        <div class="row my-4">
+          <!-- Classic tabs -->
+          <div class="classic-tabs mx-2">
+            <ul class="nav" id="layerList" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link waves-light active show" id="tab-background" data-toggle="tab" href="#tab-content-background"
+                  role="tab" aria-controls="tab-content-background" aria-selected="true">Background</a>
+              </li>              
+            </ul>
+
+            <div class="tab-content card p-3" id="tab-content">
+              <div class="tab-pane fade active show" id="tab-content-background" role="tabpanel" aria-labelledby="tab-background">
+                <p>
+                  
+                </p>
+              </div>              
+            </div>
+          </div>
+          <!-- Classic tabs -->
+        </div>
+      </div>
+    </section>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://www.managersal.net/common/mdb/js/mdb.min.js"></script>
+    <script src="https://www.managersal.net/common/scripts/spectrum.js"></script>
+    <script src="https://www.managersal.net/common/scripts/scripts.js"></script>   
+    <script src="https://www.managersal.net/common/scripts/search.js"></script>    
+    <script src="https://www.managersal.net/common/scripts/notifications.js"></script> 
+
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript"></script>
+
+  </body>
+  </html>
